@@ -1,0 +1,422 @@
+/*
+font-family: 'Lilita One', sans-serif;
+*/
+
+/* First Page - index.html - CSS Style*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;500&display=swap');
+
+
+body {
+  background-color: bisque;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+}
+
+/* Header and Logo Styling */
+.header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 20px;
+  background: #f8f8f8;
+  margin-top: 10px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-container {
+  display: flex; /* Use flexbox to align elements horizontally */
+  align-items: center; /* Center elements vertically */
+  margin-bottom: -60px;
+  margin-top: 30px;
+}
+
+.logo {
+  margin-right: 10px; /* Text beside the main logo more to the right */
+}
+
+.logo {
+  margin-left: 100px; /* Logo position more to the left*/
+}
+
+/* Center text "Pet Food & Accessories */
+.text-container {
+  text-align: center;
+  color: red;
+}
+
+/* Logo text margings close each other */
+.text-container h1 {
+  margin-bottom: -25px;
+  color: #333;
+}
+
+h1 {
+  font-family: "Lilita One", sans-serif;
+}
+
+h3 {
+  font-family: "Inter", sans-serif;
+}
+
+li {
+  font-family: "Inter", sans-serif;
+}
+
+/* Text beside main logo margings close each other */
+.right-aligned-image {
+  float: right;
+  margin-left: 50px;
+}
+
+/* Div class header Search Box */
+.search-form {
+  text-align: center;
+  padding: 5px;
+}
+
+.search-input {
+  max-width: 200px;
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 5px;
+}
+
+.search-button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Div class image-and-text-container */
+.image-and-text-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  background-color: rgba(255, 119, 0, 0.489);
+  margin-left: -80px;
+  margin-right: -50px;
+  margin-top: 80px;
+}
+
+/* Div class text */
+.main-background {
+  background-image: url("backgroud.jpg"); /* Replace "background-image.jpg" with the path to your background image */
+  background-size: cover; /* Scale the image to cover the entire element */
+  background-position: center; /* Center the image horizontally and vertically */
+  background-repeat: no-repeat; /* Prevent repeating the image */
+  padding: 130px;
+  margin-left: -10px;
+  margin-right: -60px;
+}
+.text {
+  flex: 1;
+  padding-right: 20px;
+  color: black;
+  font-size: x-large;
+}
+
+.color1-text {
+  color: white;
+  margin-left: 0px;
+  font-size: 53px;
+}
+
+.color2-text {
+  color: black;
+  margin-left: 0px;
+  font-size: 40px;
+  margin-top: -50px;
+}
+
+.color3-text {
+  color: white;
+  margin-left: 0px;
+  font-size: 25px;
+  margin-top: -40px;
+}
+
+.color4-text {
+  color: black;
+  font-size: medium;
+  margin-left: 0px;
+  margin-top: -20px;
+}
+
+.top-right-menu {
+  position: absolute;
+  top: 180px;
+  left: 60%;
+}
+
+.top-right-menu nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.top-right-menu li {
+  display: unset;
+  margin-left: 40px;
+  font-style: normal;
+}
+
+/* You can style the menu further, such as changing the font and color */
+.top-right-menu a {
+  text-decoration: none;
+  color: #000; /* Set the desired text color */
+  font-size: 30px;
+}
+
+/* Add hover effect to images */
+.image-container a:hover img {
+  opacity: 0.8;
+}
+
+.top-right-menu a:hover {
+  background-color: white; /* Background color on hover */
+  color: black; /* Text color on hover */
+}
+
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+  .top-right-menu ul {
+      flex-direction: column;
+      width: 100%;
+      display: none; /* Hidden by default, can be toggled with JavaScript */
+  }
+
+  .top-right-menu ul.active {
+      display: block;
+  }
+
+  .top-right-menu li {
+      text-align: center;
+      width: 100%;
+  }
+
+  .top-right-menu a {
+      padding: 10px;
+      border-bottom: 1px solid #444; /* Add a border to each link for clarity */
+  }
+}
+
+/* Center the Service Offer container */
+.text-center {
+  text-align: center;
+  font-size: 50px;
+  margin-top: 150px;
+}
+
+/* Center the list items of the Service Offer container */
+.services-list {
+  text-align: right;
+}
+
+.services-list .services {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.services-list li {
+  flex-basis: calc(25% - 70px); /* Adjust the width of each item */
+  margin: 5px; /* Adjust the spacing between items */
+  text-align: center;
+}
+
+.services-list h4 {
+  font-weight: bold;
+  margin: 15px;
+  color: red;
+  font-size: 30px;
+}
+
+.services-list p {
+  margin: 0;
+  text-align: left;
+  text-align: start;
+  color: black;
+}
+
+.dotted-line {
+  position: relative;
+  border-top: 2px dotted rgba(255, 17, 0, 0.852);
+  margin-top: 40px;
+}
+
+/* Get in Touch Table */
+.text-center p {
+  font-size: 50px;
+  color: rgba(255, 17, 0, 0.852);
+  font-style: italic;
+}
+table {
+  border-collapse: collapse;
+  width: 20%;
+}
+
+table th,
+td {
+  border: 2px solid black;
+  padding: 10px;
+  text-align: center;
+  background-color: rgba(255, 119, 0, 0.489);
+}
+
+.table-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+
+.text-center footer {
+  font-size: 20px;
+  border: none;
+}
+
+.horizontal-dotted-line {
+  border-top: 2px dotted rgba(255, 17, 0, 0.852);
+  height: 15vh;
+  margin-top: -20px;  
+}
+
+.gallery-image {
+  width: 300px;
+  height: 200px;
+  margin: 90px;
+}
+
+/* Second Page - second.html - CSS Style */
+.image-container {
+  text-align: center;
+}
+
+.image-with-label {
+  display: inline-block;
+  text-align: center;
+}
+
+.gallery-image {
+  width: 300px;
+  height: 270px;
+  margin: 10px;
+}
+
+.image-label {
+  margin: 0;
+  font-weight: bolder;
+  color: red;
+  font-size: 20px;
+}
+
+.image-label2 {
+  margin: 0;
+  font-weight: bold;
+  color: #000;
+  font-size: 15px;
+}
+
+.dotted-line2 {
+  border-top: 2px dotted rgba(255, 17, 0, 0.852);
+  height: 15vh;
+}
+
+/* Third Page - third.html - CSS Style */
+form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+form input[type="text"],
+form textarea,
+form select {
+  width: 50%;
+  padding: 10px;
+  margin-bottom: -15px;
+}
+
+.contact-form {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.form-header {
+  text-align: center;
+}
+
+.contact-form label {
+  display: block;
+  font-style: italic;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="radio"],
+.contact-form input[type="checkbox"],
+.contact-form select,
+.contact-form textarea,
+.contact-form input[type="submit"] {
+  width: 70%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  resize: horizontal;
+}
+
+.contact-form input[type="submit"] {
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 300hv;
+}
+
+.contact-form input[type="submit"]:hover {
+  background-color: rgba(255, 119, 0, 0.489);
+}
+
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+  border: 2px solid #4caf50;
+}
+
+.dotted-line3 {
+  border-top: 2px dotted rgba(255, 17, 0, 0.852);
+  height: 5vh;
+  margin-bottom: 50px;
+}
+
+.radio-container {
+  display: inline-block;
+  margin-bottom: 10px; /* Adjust the margin as needed to control the spacing */
+  margin-inline: 30px;
+}
+
+.checkbox-container {
+  display: block;
+  text-align: center;
+  margin-bottom: 15px;
+}
